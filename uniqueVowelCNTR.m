@@ -4,6 +4,7 @@ function [ allVowelCNT ] = uniqueVowelCNTR( inputSTR )
 
 vowels = 'aeiou';
 
+inputSTR = strtok(inputSTR, ',');
 allVowelCNT = sum(ismember( vowels, unique(inputSTR) ));
 
 end
